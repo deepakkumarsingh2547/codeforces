@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    long long k;
+    char a;
+    float f;
+    double d;
+    cin >> x >> k >> a >> f >> d;
+  cout << x << endl;
+  cout << k << endl;
+  cout << a << endl;
+  cout << f << endl;
+  cout << d << endl;
+  return 0;
+}
