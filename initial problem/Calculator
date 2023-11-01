@@ -1,0 +1,43 @@
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string k;
+    cin >> k;
+    int kl;
+
+    if (k.find("+") != string::npos) {
+        kl = k.find("+");
+        string jk = k.substr(0, kl);
+        string jl = k.substr(kl + 1, k.length());
+        int one = stoi(jk);
+        int two = stoi(jl);
+        cout << one + two << endl;
+    } else if (k.find("-") != string::npos) {
+        kl = k.find("-");
+        string jk = k.substr(0, kl);
+        string jl = k.substr(kl + 1, k.length());
+        int one = stoi(jk);
+        int two = stoi(jl);
+        cout << one - two << endl;
+    } else if (k.find("/") != string::npos) {
+        kl = k.find("/");
+        string jk = k.substr(0, kl);
+        string jl = k.substr(kl + 1, k.length());
+        int one = stoi(jk);
+        int two = stoi(jl);
+        cout << one / two << endl;
+    } else {
+        kl = k.find("*");
+        string jk = k.substr(0, kl);
+        string jl = k.substr(kl + 1, k.length());
+        int one = stoi(jk);
+        int two = stoi(jl);
+        cout << one * two << endl;
+    }
+
+    return 0;
+}
